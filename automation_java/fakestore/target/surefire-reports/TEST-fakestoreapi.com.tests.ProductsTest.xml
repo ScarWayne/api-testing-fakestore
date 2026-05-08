@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="fakestoreapi.com.tests.ProductsTest" time="5.384" tests="16" errors="0" skipped="9" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="D:\GitHub\api-testing-reqres\automation_java\fakestore\target\test-classes;D:\GitHub\api-testing-reqres\automation_java\fakestore\target\classes;C:\Users\Дымок\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\Дымок\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\Дымок\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\Дымок\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Дымок\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Дымок\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Дымок\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Дымок\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Дымок\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Дымок\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\Дымок\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\Дымок\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\Дымок\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\Дымок\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Дымок\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Дымок\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Дымок\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Дымок\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Дымок\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Дымок\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Дымок\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Дымок\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Дымок\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Дымок\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.0\jackson-databind-2.17.0.jar;C:\Users\Дымок\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.0\jackson-annotations-2.17.0.jar;C:\Users\Дымок\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.0\jackson-core-2.17.0.jar;C:\Users\Дымок\.m2\repository\net\bytebuddy\byte-buddy\1.14.9\byte-buddy-1.14.9.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.30.7-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Windows\TEMP\surefire5398448219269845960\surefirebooter-20260330120449321_3.jar C:\Windows\TEMP\surefire5398448219269845960 2026-03-30T12-04-48_908-jvmRun1 surefire-20260330120449321_1tmp surefire_0-20260330120449321_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\GitHub\api-testing-reqres\automation_java\fakestore\target\test-classes;D:\GitHub\api-testing-reqres\automation_java\fakestore\target\classes;C:\Users\Дымок\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\Дымок\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\Дымок\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\Дымок\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Дымок\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Дымок\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Дымок\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Дымок\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Дымок\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Дымок\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\Дымок\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\Дымок\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\Дымок\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\Дымок\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Дымок\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Дымок\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Дымок\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Дымок\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Дымок\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Дымок\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Дымок\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Дымок\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Дымок\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Дымок\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.0\jackson-databind-2.17.0.jar;C:\Users\Дымок\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.0\jackson-annotations-2.17.0.jar;C:\Users\Дымок\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.0\jackson-core-2.17.0.jar;C:\Users\Дымок\.m2\repository\net\bytebuddy\byte-buddy\1.14.9\byte-buddy-1.14.9.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Дымок"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.30.7-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\GitHub\api-testing-reqres\automation_java\fakestore"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Windows\TEMP\surefire5398448219269845960\surefirebooter-20260330120449321_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.30+7"/>
+    <property name="user.name" value="Scar"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-11.0.30+7"/>
+    <property name="localRepository" value="C:\Users\Дымок\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Windows\Temp\"/>
+    <property name="java.version" value="11.0.30"/>
+    <property name="user.dir" value="D:\GitHub\api-testing-reqres\automation_java\fakestore"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.30.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;c:\Users\Дымок\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\Дымок\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Eclipse Adoptium\jdk-11.0.30.7-hotspot\bin;C:\Python314\Scripts\;C:\Python314\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\Go\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.13\bin;C:\bin\task_windows_amd64;C:\Users\Дымок\AppData\Local\Python\bin;C:\Users\Дымок\AppData\Roaming\npm;C:\Users\Дымок\AppData\Local\Programs\Ollama;D:\tesseract;C:\Users\Дымок\AppData\Local\GitHubDesktop\bin;c:\Users\Дымок\.vscode\extensions\vscjava.vscode-java-debug-0.58.5\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="11.0.30+7"/>
+    <property name="java.specification.maintenance.version" value="3"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="addNewProductWithStringPrice" classname="fakestoreapi.com.tests.ProductsTest" time="0.0">
+    <skipped message="public void fakestoreapi.com.tests.ProductsTest.addNewProductWithStringPrice() is @Disabled"/>
+  </testcase>
+  <testcase name="getAllProducts" classname="fakestoreapi.com.tests.ProductsTest" time="2.414"/>
+  <testcase name="addNewProductWithNumberInTitle" classname="fakestoreapi.com.tests.ProductsTest" time="0.0">
+    <skipped message="public void fakestoreapi.com.tests.ProductsTest.addNewProductWithNumberInTitle() is @Disabled"/>
+  </testcase>
+  <testcase name="addNewProductWithoutBody" classname="fakestoreapi.com.tests.ProductsTest" time="0.0">
+    <skipped message="public void fakestoreapi.com.tests.ProductsTest.addNewProductWithoutBody() is @Disabled"/>
+  </testcase>
+  <testcase name="addNewProductWithEmpthyPrice" classname="fakestoreapi.com.tests.ProductsTest" time="0.0">
+    <skipped message="public void fakestoreapi.com.tests.ProductsTest.addNewProductWithEmpthyPrice() is @Disabled"/>
+  </testcase>
+  <testcase name="addNewProductWithNegativePrice" classname="fakestoreapi.com.tests.ProductsTest" time="0.0">
+    <skipped message="public void fakestoreapi.com.tests.ProductsTest.addNewProductWithNegativePrice() is @Disabled"/>
+  </testcase>
+  <testcase name="getProductsWithIncorrectLimit" classname="fakestoreapi.com.tests.ProductsTest" time="0.406"/>
+  <testcase name="addNewProduct" classname="fakestoreapi.com.tests.ProductsTest" time="0.697"/>
+  <testcase name="addNewProductWithNumberCategory" classname="fakestoreapi.com.tests.ProductsTest" time="0.0">
+    <skipped message="public void fakestoreapi.com.tests.ProductsTest.addNewProductWithNumberCategory() is @Disabled"/>
+  </testcase>
+  <testcase name="addNewProductWithOwnId" classname="fakestoreapi.com.tests.ProductsTest" time="0.41"/>
+  <testcase name="addNewProductWithEmpthyCategory" classname="fakestoreapi.com.tests.ProductsTest" time="0.0">
+    <skipped message="public void fakestoreapi.com.tests.ProductsTest.addNewProductWithEmpthyCategory() is @Disabled"/>
+  </testcase>
+  <testcase name="addNewProductWithEmptyBody" classname="fakestoreapi.com.tests.ProductsTest" time="0.0">
+    <skipped message="public void fakestoreapi.com.tests.ProductsTest.addNewProductWithEmptyBody() is @Disabled"/>
+  </testcase>
+  <testcase name="addNewProductWithEmptyTitle" classname="fakestoreapi.com.tests.ProductsTest" time="0.0">
+    <skipped message="public void fakestoreapi.com.tests.ProductsTest.addNewProductWithEmptyTitle() is @Disabled"/>
+  </testcase>
+  <testcase name="getProductsWithIncorrectEndpoint" classname="fakestoreapi.com.tests.ProductsTest" time="0.386"/>
+  <testcase name="getFourProducts" classname="fakestoreapi.com.tests.ProductsTest" time="0.366"/>
+  <testcase name="addNewProductWithNewField" classname="fakestoreapi.com.tests.ProductsTest" time="0.335"/>
+</testsuite>

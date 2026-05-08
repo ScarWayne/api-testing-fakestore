@@ -1,0 +1,4 @@
+fakestoreapi\com\models\ProductRequest.class
+fakestoreapi\com\builders\ProductBuilder.class
+fakestoreapi\com\tests\ProductsTest.class
+fakestoreapi\com\data\ProductBodyFactory.class
