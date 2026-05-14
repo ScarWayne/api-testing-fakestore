@@ -140,6 +140,7 @@ image = "http://example.com"
 - Response body вернулся в формате JSON
 - Response body содержит созданный товар с:
   - title = "FelixFelicius"
+  - price = 0.666
   - description = "Felix Felicis, also called 'Liquid Luck', was a potion that made the drinker lucky for a period of time, during which everything they attempt would be successful. It turned an ordinary day into an extraordinary one. It was very difficult to make, disastrous if made wrong, and required six months to brew before it was ready to be consumed"
   - category = "Potion"
   - image = "http://example.com"
@@ -481,7 +482,7 @@ random_field = "blablabla"
 "title": FelixFelicius,
 "price": 0.666,
 "description": "Felix Felicis, also called 'Liquid Luck', was a potion that made the drinker lucky for a period of time, during which everything they attempt would be successful. It turned an ordinary day into an extraordinary one. It was very difficult to make, disastrous if made wrong, and required six months to brew before it was ready to be consumed",
-"category": 12345,
+"category": "Potion",
 "image": "http://example.com",
 "random_field" = blablabla
 }
@@ -493,6 +494,7 @@ random_field = "blablabla"
 - Response body содержит созданный товар с:
   - id
   - title = "FelixFelicius"
+  - price = 0.666
   - description = "Felix Felicis, also called 'Liquid Luck', was a potion that made the drinker lucky for a period of time, during which everything they attempt would be successful. It turned an ordinary day into an extraordinary one. It was very difficult to make, disastrous if made wrong, and required six months to brew before it was ready to be consumed"
   - category = "Potion"
   - image = "http://example.com"
@@ -500,3 +502,218 @@ random_field = "blablabla"
 - Время выполнения запроса не больше 1000мсек
 
 ---
+
+## TC-017 Обновить информацию о созданном продукте (вызов метода PUT)
+
+**Приоритет** Hight
+
+### Предусловия
+API доступен
+
+### Тестовые данные
+title = "Amortencia"
+price = 0.777
+description = "Is the most powerful love potion in existence. It caused a powerful infatuation or obsession from the drinker. It had a distinctive mother-of-pearl sheen, and steam rose from it in characteristic spirals. Amortentia was considered an incredibly dangerous potion, as one should have never underestimated obsessive infatuation."
+category = "Potion"
+image = "http://MagicPotions.com"
+
+### Шаги
+1. Во вкладке Body/raw ввести:
+{
+"title": "Amortencia",
+"price": 0.777,
+"description": "Is the most powerful love potion in existence. It caused a powerful infatuation or obsession from the drinker. It had a distinctive mother-of-pearl sheen, and steam rose from it in characteristic spirals. Amortentia was considered an incredibly dangerous potion, as one should have never underestimated obsessive infatuation",
+"category": "Potion",
+"image": "http://MagicPotions.com"
+}
+2. Отправить PUT запрос https://fakestoreapi.com/products/20
+
+### Ожидаемый результат
+- Status code: 200
+- Response body вернулся в формате JSON
+- Response body содержит созданный товар с:
+  - title = "Amortencia"
+  - description = "Is the most powerful love potion in existence. It caused a powerful infatuation or obsession from the drinker. It had a distinctive mother-of-pearl sheen, and steam rose from it in characteristic spirals. Amortentia was considered an incredibly dangerous potion, as one should have never underestimated obsessive infatuation"
+  - price = 0.777
+  - category = "Potion"
+  - image = "http://example.com"
+  - Время выполнения запроса не больше 1000мсек
+
+  ---
+
+## TC-018 Обновить информацию о созданном продукте - отправить Body none
+
+**Приоритет** Hight
+
+### Предусловия
+API доступен
+
+### Тестовые данные
+
+### Шаги
+1. Во вкладке Body выбрать "none"
+2. Отправить PUT запрос https://fakestoreapi.com/products/20
+
+### Ожидаемый результат
+- Status code: 400
+- Response body содержит сообщение об ошибке
+- Информация о продукте не изменяется
+- Время выполнения запроса не больше 1000мсек
+
+---
+
+## TC-019 Обновить информацию о созданном продукте не указывая id
+
+**Приоритет** Hight
+
+### Предусловия
+API доступен
+
+### Тестовые данные
+title = "Amortencia"
+price = 0.777
+description = "Is the most powerful love potion in existence. It caused a powerful infatuation or obsession from the drinker. It had a distinctive mother-of-pearl sheen, and steam rose from it in characteristic spirals. Amortentia was considered an incredibly dangerous potion, as one should have never underestimated obsessive infatuation."
+category = "Potion"
+image = "http://MagicPotions.com"
+
+### Шаги
+1. Во вкладке Body/raw ввести:
+{
+"title": "Amortencia",
+"price": 0.777,
+"description": "Is the most powerful love potion in existence. It caused a powerful infatuation or obsession from the drinker. It had a distinctive mother-of-pearl sheen, and steam rose from it in characteristic spirals. Amortentia was considered an incredibly dangerous potion, as one should have never underestimated obsessive infatuation",
+"category": "Potion",
+"image": "http://MagicPotions.com"
+}
+2. Отправить PUT запрос https://fakestoreapi.com/products
+
+### Ожидаемый результат
+- Status code: 400
+- Response body содержит сообщение об ошибке
+- Время выполнения запроса не больше 1000мсек
+
+## TC-020 Обновить информацию о созданном продукте с незаполненным полем "title"
+
+**Приоритет** Hight
+
+### Предусловия
+API доступен
+
+### Тестовые данные
+title = ""
+price = 0.777
+description = "Is the most powerful love potion in existence. It caused a powerful infatuation or obsession from the drinker. It had a distinctive mother-of-pearl sheen, and steam rose from it in characteristic spirals. Amortentia was considered an incredibly dangerous potion, as one should have never underestimated obsessive infatuation."
+category = "Potion"
+image = "http://MagicPotions.com"
+
+### Шаги
+1. Во вкладке Body/raw ввести:
+{
+"title": "",
+"price": 0.777,
+"description": "Is the most powerful love potion in existence. It caused a powerful infatuation or obsession from the drinker. It had a distinctive mother-of-pearl sheen, and steam rose from it in characteristic spirals. Amortentia was considered an incredibly dangerous potion, as one should have never underestimated obsessive infatuation",
+"category": "Potion",
+"image": "http://MagicPotions.com"
+}
+2. Отправить PUT запрос https://fakestoreapi.com/products/20
+
+### Ожидаемый результат
+- Status code: 400
+- Response body содержит сообщение об ошибке, так как поле "title" должно быть обязательным
+- Время выполнения запроса не больше 1000мсек
+
+---
+
+## TC-021 Обновить информацию о созданном продукте с незаполненным полем "price"
+
+**Приоритет** Hight
+
+### Предусловия
+API доступен
+
+### Тестовые данные
+title = "Amortencia"
+price = 
+description = "Is the most powerful love potion in existence. It caused a powerful infatuation or obsession from the drinker. It had a distinctive mother-of-pearl sheen, and steam rose from it in characteristic spirals. Amortentia was considered an incredibly dangerous potion, as one should have never underestimated obsessive infatuation."
+category = "Potion"
+image = "http://MagicPotions.com"
+
+### Шаги
+1. Во вкладке Body/raw ввести:
+{
+"title": "Amortencia",
+"price": ,
+"description": "Is the most powerful love potion in existence. It caused a powerful infatuation or obsession from the drinker. It had a distinctive mother-of-pearl sheen, and steam rose from it in characteristic spirals. Amortentia was considered an incredibly dangerous potion, as one should have never underestimated obsessive infatuation",
+"category": "Potion",
+"image": "http://MagicPotions.com"
+}
+2. Отправить PUT запрос https://fakestoreapi.com/products/20
+
+### Ожидаемый результат
+- Status code: 400
+- Response body содержит сообщение об ошибке, так как поле "price" обязательное
+- Время выполнения запроса не больше 1000мсек
+
+---
+
+## TC-022 Обновить информацию о созданном продукте с некорректными данными в поле "price"
+
+**Приоритет** Hight
+
+### Предусловия
+API доступен
+
+### Тестовые данные
+title = "Amortencia"
+price = "!&%$"
+description = "Is the most powerful love potion in existence. It caused a powerful infatuation or obsession from the drinker. It had a distinctive mother-of-pearl sheen, and steam rose from it in characteristic spirals. Amortentia was considered an incredibly dangerous potion, as one should have never underestimated obsessive infatuation."
+category = "Potion"
+image = "http://MagicPotions.com"
+
+### Шаги
+1. Во вкладке Body/raw ввести:
+{
+"title": "Amortencia",
+"price": "!&%$",
+"description": "Is the most powerful love potion in existence. It caused a powerful infatuation or obsession from the drinker. It had a distinctive mother-of-pearl sheen, and steam rose from it in characteristic spirals. Amortentia was considered an incredibly dangerous potion, as one should have never underestimated obsessive infatuation",
+"category": "Potion",
+"image": "http://MagicPotions.com"
+}
+2. Отправить PUT запрос https://fakestoreapi.com/products/20
+
+### Ожидаемый результат
+- Status code: 400
+- Response body содержит сообщение об ошибке, так как валидация поля "price" обязательна
+- Время выполнения запроса не больше 1000мсек
+
+---
+
+## TC-023 Обновить информацию о созданном продукте с незаполненным полем "category"
+
+**Приоритет** Hight
+
+### Предусловия
+API доступен
+
+### Тестовые данные
+title = "Amortencia"
+price = 0.777
+description = "Is the most powerful love potion in existence. It caused a powerful infatuation or obsession from the drinker. It had a distinctive mother-of-pearl sheen, and steam rose from it in characteristic spirals. Amortentia was considered an incredibly dangerous potion, as one should have never underestimated obsessive infatuation."
+category = ""
+image = "http://MagicPotions.com"
+
+### Шаги
+1. Во вкладке Body/raw ввести:
+{
+"title": "Amortencia",
+"price": 0.777,
+"description": "Is the most powerful love potion in existence. It caused a powerful infatuation or obsession from the drinker. It had a distinctive mother-of-pearl sheen, and steam rose from it in characteristic spirals. Amortentia was considered an incredibly dangerous potion, as one should have never underestimated obsessive infatuation",
+"category": "",
+"image": "http://MagicPotions.com"
+}
+2. Отправить PUT запрос https://fakestoreapi.com/products/20
+
+### Ожидаемый результат
+- Status code: 400
+- Response body содержит сообщение об ошибке, так как поле "category" обязательное
+- Время выполнения запроса не больше 1000мсек
