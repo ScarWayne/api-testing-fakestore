@@ -22,4 +22,5 @@ jobs:
           java-version: 11
 
       - name: Run tests
+        working-directory: ./automation_java/fakestore
         run: mvn test
