@@ -21,6 +21,10 @@ jobs:
           distribution: temurin
           java-version: 11
 
+      - name: Check API response
+        run: |
+          curl -i https://fakestoreapi.com/products | head -80
+
       - name: Run tests
         working-directory: ./automation_java/fakestore
         run: mvn test
